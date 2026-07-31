@@ -1,0 +1,31 @@
+{
+    "schemaVersion":  1,
+    "id":  "auto-fish",
+    "version":  "${version}",
+    "name":  "Auto Fish",
+    "description":  "This is an example description! Tell everyone what your mod is about!",
+    "authors":  [
+                    "Me!"
+                ],
+    "contact":  {
+                    "homepage":  "https://fabricmc.net/",
+                    "sources":  "https://github.com/FabricMC/fabric-example-mod"
+                },
+    "license":  "CC0-1.0",
+    "icon":  "assets/auto-fish/icon.png",
+    "environment":  "*",
+    "entrypoints":  {
+                        "client":  [
+                                       "name.autofish.MinimalAutoFishClient"
+                                   ]
+                    },
+    "mixins":  [
+                   "auto-fish.mixins.json"
+               ],
+    "depends":  {
+                    "fabricloader":  "\u003e=0.19.3",
+                    "minecraft":  "~26.1.2",
+                    "java":  "\u003e=25",
+                    "fabric-api":  "*"
+                }
+}
