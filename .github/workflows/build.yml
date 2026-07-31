@@ -18,7 +18,7 @@ jobs:
     - name: Make gradlew executable
       run: chmod +x ./gradlew
     - name: Build with Gradle
-      run: ./gradlew build --refresh-dependencies --no-build-cache
+      run: ./gradlew build
     - name: Upload compiled JAR
       uses: actions/upload-artifact@v4
       with:
